@@ -64,32 +64,80 @@ Separação clara de responsabilidades.
 ```bash
 LUMA/
 ├── app.py
-├── server.py
+├── app_errors.log
 ├── install.py
 ├── README.md
+├── server.py
 │
 ├── api/
 │   ├── control/
+│   │   ├── projeto_control.py
+│   │   ├── tarefa_control.py
+│   │   └── usuario_control.py
+│   │
 │   ├── dao/
+│   │   ├── projeto_dao.py
+│   │   ├── tarefa_dao.py
+│   │   └── usuario_dao.py
+│   │
 │   ├── database/
+│   │   └── mysql_database.py
+│   │
 │   ├── http/
+│   │   └── meu_token_jwt.py
+│   │
 │   ├── middleware/
+│   │   ├── jwt_middleware.py
+│   │   ├── projeto_middleware.py
+│   │   ├── tarefa_middleware.py
+│   │   └── usuario_middleware.py
+│   │
 │   ├── model/
+│   │   ├── projeto.py
+│   │   ├── tarefa.py
+│   │   └── usuario.py
+│   │
 │   ├── router/
+│   │   ├── projeto_roteador.py
+│   │   ├── tarefa_roteador.py
+│   │   └── usuario_roteador.py
+│   │
 │   ├── service/
+│   │   ├── projeto_service.py
+│   │   ├── tarefa_service.py
+│   │   └── usuario_service.py
+│   │
 │   ├── system/
+│   │   └── log.log
+│   │
 │   └── utils/
+│       ├── error_response.py
+│       └── logger.py
 │
 ├── docs/
 │   └── Banco.sql
 │
 └── static/
+    ├── ApiService.js
     ├── dashboard.html
+    ├── esqueci-senha.html
+    ├── favicon.ico
     ├── login.html
-    ├── register.html
     ├── projeto.html
+    ├── redefinir-senha.html
+    ├── register.html
     ├── tarefa.html
     ├── usuario.html
+    │
+    ├── css/
+    │   ├── bootstrap.min.css
+    │   └── theme.css
+    │
+    └── js/
+        ├── bootstrap.bundle.min.js
+        ├── csvGenerator.js
+        ├── pdfGenerator.js
+        └── theme.js
 ```
 
 ---
